@@ -4,7 +4,7 @@
  *
  * @package    Church_Theme_Framework
  * @subpackage Admin
- * @copyright  Copyright (c) 2013, churchthemes.com
+ * @copyright  Copyright (c) 2013 - 2016, churchthemes.com
  * @link       https://github.com/churchthemes/church-theme-framework
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * @since      0.9
@@ -32,6 +32,7 @@ function ctfw_admin_enqueue_scripts() {
 		wp_enqueue_media();
 
 		// Color picker
+		// Improvement to enqueue only when there is a widget with color field?
 		wp_enqueue_script( 'wp-color-picker' );
 
 		// Main widgets script
