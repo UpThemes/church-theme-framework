@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 function ctfw_mime_type_name( $mime_type ) {
 
 	// Default if no match
-	$friendly_name = _x( 'File', 'mime type', 'church-theme-framework' );
+	$friendly_name = _x( 'File', 'mime type', 'onechurch' );
 
 	// Friendly mime type names
 	$mime_type_names = array(

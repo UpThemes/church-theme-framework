@@ -31,9 +31,9 @@ class CTFW_Widget_Section extends CTFW_Widget {
 
 		parent::__construct(
 			'ctfw-section',
-			_x( 'CT Section', 'widget', 'church-theme-framework' ),
+			_x( 'CT Section', 'widget', 'onechurch' ),
 			array(
-				'description' => __( 'Shows a section', 'church-theme-framework' )
+				'description' => __( 'Shows a section', 'onechurch' )
 			)
 		);
 
@@ -55,9 +55,9 @@ class CTFW_Widget_Section extends CTFW_Widget {
 			// Example
 			/*
 			'field_id' => array(
-				'name'				=> __( 'Field Name', 'church-theme-framework' ),
+				'name'				=> __( 'Field Name', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
-				'desc'				=> __( 'This is the description below the field.', 'church-theme-framework' ),
+				'desc'				=> __( 'This is the description below the field.', 'onechurch' ),
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
 				'checkbox_label'	=> '', //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
@@ -79,7 +79,7 @@ class CTFW_Widget_Section extends CTFW_Widget {
 
 			// Title
 			'title' => array(
-				'name'				=> _x( 'Title', 'section widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Title', 'section widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -102,7 +102,7 @@ class CTFW_Widget_Section extends CTFW_Widget {
 
 			// Content
 			'content' => array(
-				'name'				=> _x( 'Content', 'section widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Content', 'section widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'textarea', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -125,7 +125,7 @@ class CTFW_Widget_Section extends CTFW_Widget {
 
 			// Image
 			'image_id' => array(
-				'name'				=> _x( 'Image', 'section widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Image', 'section widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'image', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -148,8 +148,8 @@ class CTFW_Widget_Section extends CTFW_Widget {
 
 			// Image Opacity
 			'image_opacity' => array(
-				'name'				=> _x( 'Image Opacity', 'section widget', 'church-theme-framework' ),
-				'after_name'		=> _x( '(Percentage)', 'section widget', 'church-theme-framework' ), // (Optional), (Required), etc.
+				'name'				=> _x( 'Image Opacity', 'section widget', 'onechurch' ),
+				'after_name'		=> _x( '(Percentage)', 'section widget', 'onechurch' ), // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'number', // text, textarea, checkbox, radio, select, number, url, image, color
 				'checkbox_label'	=> '', //show text after checkbox
@@ -173,7 +173,7 @@ class CTFW_Widget_Section extends CTFW_Widget {
 
 			// Link 1 Text
 			'link1_text' => array(
-				'name'				=> _x( 'Link 1', 'section widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Link 1', 'section widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -186,7 +186,7 @@ class CTFW_Widget_Section extends CTFW_Widget {
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> false, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(
-										'placeholder' => _x( 'Text', 'section widget', 'church-theme-framework' )
+										'placeholder' => _x( 'Text', 'section widget', 'onechurch' )
 									), // attributes to add to input element
 				'class'				=> '', // class(es) to add to input
 				'field_attributes'	=> array(), // attr => value array for field container
@@ -200,7 +200,7 @@ class CTFW_Widget_Section extends CTFW_Widget {
 			'link1_url' => array(
 				'name'				=> '',
 				'after_name'		=> '', // (Optional), (Required), etc.
-				'desc'				=> __( 'Enter text for link then URL.', 'church-theme-framework' ),
+				'desc'				=> __( 'Enter text for link then URL.', 'onechurch' ),
 				'type'				=> 'url', // text, textarea, checkbox, radio, select, number, url, image, color
 				'checkbox_label'	=> '', //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
@@ -211,7 +211,7 @@ class CTFW_Widget_Section extends CTFW_Widget {
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> false, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(
-										'placeholder' => _x( 'URL', 'section widget', 'church-theme-framework' )
+										'placeholder' => _x( 'URL', 'section widget', 'onechurch' )
 									), // attributes to add to input element
 				'class'				=> '', // class(es) to add to input
 				'field_attributes'	=> array(), // attr => value array for field container
@@ -223,7 +223,7 @@ class CTFW_Widget_Section extends CTFW_Widget {
 
 			// Link 2 Text
 			'link2_text' => array(
-				'name'				=> _x( 'Link 2', 'section widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Link 2', 'section widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -236,7 +236,7 @@ class CTFW_Widget_Section extends CTFW_Widget {
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> false, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(
-										'placeholder' => _x( 'Text', 'section widget', 'church-theme-framework' )
+										'placeholder' => _x( 'Text', 'section widget', 'onechurch' )
 									), // attributes to add to input element
 				'class'				=> '', // class(es) to add to input
 				'field_attributes'	=> array(), // attr => value array for field container
@@ -261,7 +261,7 @@ class CTFW_Widget_Section extends CTFW_Widget {
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> false, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(
-										'placeholder' => _x( 'URL', 'section widget', 'church-theme-framework' )
+										'placeholder' => _x( 'URL', 'section widget', 'onechurch' )
 									), // attributes to add to input element
 				'class'				=> '', // class(es) to add to input
 				'field_attributes'	=> array(), // attr => value array for field container
@@ -273,7 +273,7 @@ class CTFW_Widget_Section extends CTFW_Widget {
 
 			// Link 3 Text
 			'link3_text' => array(
-				'name'				=> _x( 'Link 3', 'section widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Link 3', 'section widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -286,7 +286,7 @@ class CTFW_Widget_Section extends CTFW_Widget {
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> false, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(
-										'placeholder' => _x( 'Text', 'section widget', 'church-theme-framework' )
+										'placeholder' => _x( 'Text', 'section widget', 'onechurch' )
 									), // attributes to add to input element
 				'class'				=> '', // class(es) to add to input
 				'field_attributes'	=> array(), // attr => value array for field container
@@ -311,7 +311,7 @@ class CTFW_Widget_Section extends CTFW_Widget {
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> false, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(
-										'placeholder' => _x( 'URL', 'section widget', 'church-theme-framework' )
+										'placeholder' => _x( 'URL', 'section widget', 'onechurch' )
 									), // attributes to add to input element
 				'class'				=> '', // class(es) to add to input
 				'field_attributes'	=> array(), // attr => value array for field container
@@ -323,7 +323,7 @@ class CTFW_Widget_Section extends CTFW_Widget {
 
 			// Link 4 Text
 			'link4_text' => array(
-				'name'				=> _x( 'Link 4', 'section widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Link 4', 'section widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -336,7 +336,7 @@ class CTFW_Widget_Section extends CTFW_Widget {
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> false, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(
-										'placeholder' => _x( 'Text', 'section widget', 'church-theme-framework' )
+										'placeholder' => _x( 'Text', 'section widget', 'onechurch' )
 									), // attributes to add to input element
 				'class'				=> '', // class(es) to add to input
 				'field_attributes'	=> array(), // attr => value array for field container
@@ -361,7 +361,7 @@ class CTFW_Widget_Section extends CTFW_Widget {
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> false, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(
-										'placeholder' => _x( 'URL', 'section widget', 'church-theme-framework' )
+										'placeholder' => _x( 'URL', 'section widget', 'onechurch' )
 									), // attributes to add to input element
 				'class'				=> '', // class(es) to add to input
 				'field_attributes'	=> array(), // attr => value array for field container

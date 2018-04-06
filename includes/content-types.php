@@ -651,7 +651,7 @@ function ctfw_content_type_archives( $args = array() ) {
 						// Name
 						// 'name' that is automatically localized (key matches taxonomy term object)
 						/* translators: 1: month name, 2: 4-digit year */
-			            $name = sprintf( _x('%1$s %2$d', 'month archive', 'church-theme-framework' ), $wp_locale->get_month( $month ), $year );
+			            $name = sprintf( _x('%1$s %2$d', 'month archive', 'onechurch' ), $wp_locale->get_month( $month ), $year );
 
 						// URL
 						$url = ctfw_events_month_archive_url( $year_month );
@@ -717,7 +717,7 @@ function ctfw_content_type_archives( $args = array() ) {
 				$archives[$archive_key]['type'] = 'months';
 
 				// Name
-				$archives[$archive_key]['name'] = _x( 'Months', 'content type archives', 'church-theme-framework' );
+				$archives[$archive_key]['name'] = _x( 'Months', 'content type archives', 'onechurch' );
 
 			}
 

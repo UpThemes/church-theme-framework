@@ -29,9 +29,9 @@ class CTFW_Widget_Events extends CTFW_Widget {
 
 		parent::__construct(
 			'ctfw-events',
-			_x( 'CT Events', 'events widget', 'church-theme-framework' ),
+			_x( 'CT Events', 'events widget', 'onechurch' ),
 			array(
-				'description' => _x( 'Shows upcoming or past events', 'events widget', 'church-theme-framework' )
+				'description' => _x( 'Shows upcoming or past events', 'events widget', 'onechurch' )
 			)
 		);
 
@@ -53,9 +53,9 @@ class CTFW_Widget_Events extends CTFW_Widget {
 			// Example
 			/*
 			'field_id' => array(
-				'name'				=> __( 'Field Name', 'church-theme-framework' ),
+				'name'				=> __( 'Field Name', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
-				'desc'				=> __( 'This is the description below the field.', 'church-theme-framework' ),
+				'desc'				=> __( 'This is the description below the field.', 'onechurch' ),
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
 				'checkbox_label'	=> '', //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
@@ -77,7 +77,7 @@ class CTFW_Widget_Events extends CTFW_Widget {
 
 			// Title
 			'title' => array(
-				'name'				=> _x( 'Title', 'events widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Title', 'events widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -86,7 +86,7 @@ class CTFW_Widget_Events extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array(), // array of keys/values for radio or select
-				'default'			=> _x( 'Events', 'events widget title default', 'church-theme-framework' ), // value to pre-populate option with (before first save or on reset)
+				'default'			=> _x( 'Events', 'events widget title default', 'onechurch' ), // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> false, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(), // attributes to add to input element
@@ -100,7 +100,7 @@ class CTFW_Widget_Events extends CTFW_Widget {
 
 			// Timeframe
 			'timeframe' => array(
-				'name'				=> _x( 'Period', 'events widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Period', 'events widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'radio', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -109,8 +109,8 @@ class CTFW_Widget_Events extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array( // array of keys/values for radio or select
-					'upcoming'	=> _x( 'Upcoming', 'events widget order', 'church-theme-framework' ),
-					'past'		=> _x( 'Past', 'events widget order', 'church-theme-framework' ),
+					'upcoming'	=> _x( 'Upcoming', 'events widget order', 'onechurch' ),
+					'past'		=> _x( 'Past', 'events widget order', 'onechurch' ),
 				),
 				'default'			=> 'upcoming', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -126,7 +126,7 @@ class CTFW_Widget_Events extends CTFW_Widget {
 
 			// Category
 			'category' => array(
-				'name'				=> _x( 'Category', 'events widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Category', 'events widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'select', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -135,7 +135,7 @@ class CTFW_Widget_Events extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> ctfw_term_options( 'ctc_event_category', array( // array of keys/values for radio or select
-					'all' => _x( 'All Categories', 'sermons widget', 'church-theme-framework' )
+					'all' => _x( 'All Categories', 'sermons widget', 'onechurch' )
 				) ),
 				'default'			=> 'all', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -151,7 +151,7 @@ class CTFW_Widget_Events extends CTFW_Widget {
 
 			// Limit
 			'limit' => array(
-				'name'				=> _x( 'Limit', 'events widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Limit', 'events widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'number', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -178,7 +178,7 @@ class CTFW_Widget_Events extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show image', 'events widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show image', 'events widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
@@ -204,7 +204,7 @@ class CTFW_Widget_Events extends CTFW_Widget {
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
-				'checkbox_label'	=> _x( 'Show date', 'events widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show date', 'events widget', 'onechurch' ), //show text after checkbox
 				'options'			=> array(), // array of keys/values for radio or select
 				'default'			=> true, // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
@@ -224,7 +224,7 @@ class CTFW_Widget_Events extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show time', 'events widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show time', 'events widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
@@ -250,7 +250,7 @@ class CTFW_Widget_Events extends CTFW_Widget {
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
-				'checkbox_label'	=> _x( 'Show category', 'events widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show category', 'events widget', 'onechurch' ), //show text after checkbox
 				'options'			=> array(), // array of keys/values for radio or select
 				'default'			=> false, // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
@@ -270,7 +270,7 @@ class CTFW_Widget_Events extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show excerpt', 'events widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show excerpt', 'events widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type

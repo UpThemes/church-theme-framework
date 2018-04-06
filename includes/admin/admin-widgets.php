@@ -30,9 +30,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 function ctfw_admin_widgets_js_data() {
 
 	$data = array( // make data available
-		'image_library_title'	=> _x( 'Choose Image for Widget', 'widget image library', 'church-theme-framework' ),
-		'image_library_button'	=> _x( 'Use in Widget', 'widget image library', 'church-theme-framework' ),
-		'incompatible_message'	=> __( 'Sorry, this widget is not made for use in this area. Please delete.', 'church-theme-framework' ),
+		'image_library_title'	=> _x( 'Choose Image for Widget', 'widget image library', 'onechurch' ),
+		'image_library_button'	=> _x( 'Use in Widget', 'widget image library', 'onechurch' ),
+		'incompatible_message'	=> __( 'Sorry, this widget is not made for use in this area. Please delete.', 'onechurch' ),
 		'widget_restrictions'	=> current_theme_supports( 'ctfw-sidebar-widget-restrictions' )
 	);
 

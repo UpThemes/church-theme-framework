@@ -47,12 +47,12 @@ function ctfw_post_date( $options = array(), $post = null ) {
 
 	// Show "Today"
 	if ( $options['today'] && $today_ymd == $date_ymd ) {
-		$date_formatted = __( 'Today', 'church-theme-framework' );
+		$date_formatted = __( 'Today', 'onechurch' );
 	}
 
 	// Show "Yesterday"
 	elseif ( $options['yesterday'] && $yesterday_ymd == $date_ymd ) {
-		$date_formatted = __( 'Yesterday', 'church-theme-framework' );
+		$date_formatted = __( 'Yesterday', 'onechurch' );
 	}
 
 	// Show date

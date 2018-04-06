@@ -128,7 +128,7 @@ function ctfw_event_data( $args = array() ) {
 	$args = wp_parse_args( $args, array(
 		'post_id'				=> null, // use current
 		/* translators: time range (%1$s) and description (%2$s) for an event */
-		'time_and_desc_format'	=> __( '%1$s <span>(%2$s)</span>', 'church-theme-framework' ),
+		'time_and_desc_format'	=> __( '%1$s <span>(%2$s)</span>', 'onechurch' ),
 	) );
 
 	// Extract arguments to variables
@@ -200,7 +200,7 @@ function ctfw_event_data( $args = array() ) {
 		// Build range
 		/* translators: date range */
 		$meta['date'] = sprintf(
-			_x( '%1$s &ndash; %2$s', 'dates', 'church-theme-framework' ),
+			_x( '%1$s &ndash; %2$s', 'dates', 'onechurch' ),
 			$start_date_formatted,
 			$end_date_formatted
 		);
@@ -228,7 +228,7 @@ function ctfw_event_data( $args = array() ) {
 			// Time Range
 			/* translators: time range */
 			$meta['time_range'] = sprintf(
-				_x( '%1$s &ndash; %2$s', 'times', 'church-theme-framework' ),
+				_x( '%1$s &ndash; %2$s', 'times', 'onechurch' ),
 				$meta['start_time_formatted'],
 				$meta['end_time_formatted']
 			);
@@ -1015,11 +1015,11 @@ function ctfw_event_recurrence_note( $post_id = false, $data = false ) {
 		if ( $monthly_week ) {
 
 			$monthly_week_words = array(
-				'1'		=> _x( 'first', 'week of month', 'church-theme-framework' ),
-				'2'		=> _x( 'second', 'week of month', 'church-theme-framework' ),
-				'3'		=> _x( 'third', 'week of month', 'church-theme-framework' ),
-				'4'		=> _x( 'fourth', 'week of month', 'church-theme-framework' ),
-				'last'	=> _x( 'last', 'week of month', 'church-theme-framework' ),
+				'1'		=> _x( 'first', 'week of month', 'onechurch' ),
+				'2'		=> _x( 'second', 'week of month', 'onechurch' ),
+				'3'		=> _x( 'third', 'week of month', 'onechurch' ),
+				'4'		=> _x( 'fourth', 'week of month', 'onechurch' ),
+				'last'	=> _x( 'last', 'week of month', 'onechurch' ),
 			);
 
 			$monthly_week_word = $monthly_week_words[$monthly_week];
@@ -1040,7 +1040,7 @@ function ctfw_event_recurrence_note( $post_id = false, $data = false ) {
 							'Every week until %2$s',
 							'Every %1$s weeks until %2$s',
 							$weekly_interval,
-							'church-theme-framework'
+							'onechurch'
 						),
 						$weekly_interval,
 						$recurrence_end_date_localized
@@ -1054,7 +1054,7 @@ function ctfw_event_recurrence_note( $post_id = false, $data = false ) {
 							'Every week',
 							'Every %1$s weeks',
 							$weekly_interval,
-							'church-theme-framework'
+							'onechurch'
 						),
 						$weekly_interval
 					);
@@ -1068,7 +1068,7 @@ function ctfw_event_recurrence_note( $post_id = false, $data = false ) {
 						'Every Week',
 						'Every %1$s Weeks',
 						$weekly_interval,
-						'church-theme-framework'
+						'onechurch'
 					),
 					$weekly_interval
 				);
@@ -1089,7 +1089,7 @@ function ctfw_event_recurrence_note( $post_id = false, $data = false ) {
 								'Every month on the %2$s %3$s until %4$s',
 								'Every %1$s months on the %2$s %3$s until %4$s',
 								$monthly_interval,
-								'church-theme-framework'
+								'onechurch'
 							),
 							$monthly_interval,
 							$monthly_week_word,
@@ -1108,7 +1108,7 @@ function ctfw_event_recurrence_note( $post_id = false, $data = false ) {
 								'Every month on the %2$s %3$s',
 								'Every %1$s months on the %2$s %3$s',
 								$monthly_interval,
-								'church-theme-framework'
+								'onechurch'
 							),
 							$monthly_interval,
 							$monthly_week_word,
@@ -1129,7 +1129,7 @@ function ctfw_event_recurrence_note( $post_id = false, $data = false ) {
 								'Every month until %2$s',
 								'Every %1$s months until %2$s',
 								$monthly_interval,
-								'church-theme-framework'
+								'onechurch'
 							),
 							$monthly_interval,
 							$recurrence_end_date_localized
@@ -1146,7 +1146,7 @@ function ctfw_event_recurrence_note( $post_id = false, $data = false ) {
 								'Every month',
 								'Every %1$s months',
 								$monthly_interval,
-								'church-theme-framework'
+								'onechurch'
 							),
 							$monthly_interval
 						);
@@ -1161,7 +1161,7 @@ function ctfw_event_recurrence_note( $post_id = false, $data = false ) {
 						'Every Month',
 						'Every %1$s Months',
 						$monthly_interval,
-						'church-theme-framework'
+						'onechurch'
 					),
 					$monthly_interval
 				);
@@ -1175,16 +1175,16 @@ function ctfw_event_recurrence_note( $post_id = false, $data = false ) {
 
 					/* translators: %1$s is recurrence end date */
 					$note['full'] = sprintf(
-						__( 'Every year until %1$s', 'church-theme-framework' ),
+						__( 'Every year until %1$s', 'onechurch' ),
 						$recurrence_end_date_localized
 					);
 
 				} else {
-					$note['full'] = __( 'Every year', 'church-theme-framework' );
+					$note['full'] = __( 'Every year', 'onechurch' );
 				}
 
 				// Short
-				$note['short'] = __( 'Every Year', 'church-theme-framework' );
+				$note['short'] = __( 'Every Year', 'onechurch' );
 
 				break;
 

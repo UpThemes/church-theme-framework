@@ -29,9 +29,9 @@ class CTFW_Widget_Locations extends CTFW_Widget {
 
 		parent::__construct(
 			'ctfw-locations',
-			_x( 'CT Locations', 'widget', 'church-theme-framework' ),
+			_x( 'CT Locations', 'widget', 'onechurch' ),
 			array(
-				'description' => __( 'Shows church location(s)', 'church-theme-framework' )
+				'description' => __( 'Shows church location(s)', 'onechurch' )
 			)
 		);
 
@@ -53,9 +53,9 @@ class CTFW_Widget_Locations extends CTFW_Widget {
 			// Example
 			/*
 			'field_id' => array(
-				'name'				=> __( 'Field Name', 'church-theme-framework' ),
+				'name'				=> __( 'Field Name', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
-				'desc'				=> __( 'This is the description below the field.', 'church-theme-framework' ),
+				'desc'				=> __( 'This is the description below the field.', 'onechurch' ),
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
 				'checkbox_label'	=> '', //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
@@ -77,7 +77,7 @@ class CTFW_Widget_Locations extends CTFW_Widget {
 
 			// Title
 			'title' => array(
-				'name'				=> _x( 'Title', 'locations widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Title', 'locations widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -86,7 +86,7 @@ class CTFW_Widget_Locations extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array(), // array of keys/values for radio or select
-				'default'			=> _x( 'Locations', 'locations widget title default', 'church-theme-framework' ), // value to pre-populate option with (before first save or on reset)
+				'default'			=> _x( 'Locations', 'locations widget title default', 'onechurch' ), // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> false, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(), // attributes to add to input element
@@ -100,7 +100,7 @@ class CTFW_Widget_Locations extends CTFW_Widget {
 
 			// Order By
 			'orderby' => array(
-				'name'				=> _x( 'Order By', 'locations widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Order By', 'locations widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'select', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -109,8 +109,8 @@ class CTFW_Widget_Locations extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array( // array of keys/values for radio or select
-					'menu_order'		=> _x( 'Custom Order', 'locations widget order by', 'church-theme-framework' ),
-					'title'				=> _x( 'Name', 'locations widget order by', 'church-theme-framework' ),
+					'menu_order'		=> _x( 'Custom Order', 'locations widget order by', 'onechurch' ),
+					'title'				=> _x( 'Name', 'locations widget order by', 'onechurch' ),
 				),
 				'default'			=> 'menu_order', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -135,8 +135,8 @@ class CTFW_Widget_Locations extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array( // array of keys/values for radio or select
-					'asc'	=> _x( 'Low to High', 'locations widget order', 'church-theme-framework' ),
-					'desc'	=> _x( 'High to Low', 'locations widget order', 'church-theme-framework' ),
+					'asc'	=> _x( 'Low to High', 'locations widget order', 'onechurch' ),
+					'desc'	=> _x( 'High to Low', 'locations widget order', 'onechurch' ),
 				),
 				'default'			=> 'asc', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -152,7 +152,7 @@ class CTFW_Widget_Locations extends CTFW_Widget {
 
 			// Limit
 			'limit' => array(
-				'name'				=> _x( 'Limit', 'locations widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Limit', 'locations widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'number', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -179,7 +179,7 @@ class CTFW_Widget_Locations extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show image', 'events widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show image', 'events widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
@@ -202,7 +202,7 @@ class CTFW_Widget_Locations extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show address', 'locations widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show address', 'locations widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
@@ -225,7 +225,7 @@ class CTFW_Widget_Locations extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show phone number', 'locations widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show phone number', 'locations widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
@@ -251,7 +251,7 @@ class CTFW_Widget_Locations extends CTFW_Widget {
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
-				'checkbox_label'	=> _x( 'Show email', 'locations widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show email', 'locations widget', 'onechurch' ), //show text after checkbox
 				'options'			=> array(), // array of keys/values for radio or select
 				'default'			=> false, // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
@@ -271,7 +271,7 @@ class CTFW_Widget_Locations extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show times', 'locations widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show times', 'locations widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
@@ -294,7 +294,7 @@ class CTFW_Widget_Locations extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show map', 'locations widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show map', 'locations widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type

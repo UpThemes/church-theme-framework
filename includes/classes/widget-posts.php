@@ -31,9 +31,9 @@ class CTFW_Widget_Posts extends CTFW_Widget {
 
 		parent::__construct(
 			'ctfw-posts',
-			_x( 'CT Posts', 'widget', 'church-theme-framework' ),
+			_x( 'CT Posts', 'widget', 'onechurch' ),
 			array(
-				'description' => __( 'Shows blog posts according to options', 'church-theme-framework' )
+				'description' => __( 'Shows blog posts according to options', 'onechurch' )
 			)
 		);
 
@@ -55,9 +55,9 @@ class CTFW_Widget_Posts extends CTFW_Widget {
 			// Example
 			/*
 			'field_id' => array(
-				'name'				=> __( 'Field Name', 'church-theme-framework' ),
+				'name'				=> __( 'Field Name', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
-				'desc'				=> __( 'This is the description below the field.', 'church-theme-framework' ),
+				'desc'				=> __( 'This is the description below the field.', 'onechurch' ),
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
 				'checkbox_label'	=> '', //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
@@ -79,7 +79,7 @@ class CTFW_Widget_Posts extends CTFW_Widget {
 
 			// Title
 			'title' => array(
-				'name'				=> _x( 'Title', 'posts widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Title', 'posts widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -88,7 +88,7 @@ class CTFW_Widget_Posts extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array(), // array of keys/values for radio or select
-				'default'			=> _x( 'Posts', 'posts widget title default', 'church-theme-framework' ), // value to pre-populate option with (before first save or on reset)
+				'default'			=> _x( 'Posts', 'posts widget title default', 'onechurch' ), // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> false, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(), // attributes to add to input element
@@ -102,7 +102,7 @@ class CTFW_Widget_Posts extends CTFW_Widget {
 
 			// Category
 			'category' => array(
-				'name'				=> _x( 'Category', 'posts widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Category', 'posts widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'select', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -111,7 +111,7 @@ class CTFW_Widget_Posts extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> ctfw_term_options( 'category', array( // array of keys/values for radio or select
-					'all' => _x( 'All Categories', 'posts widget', 'church-theme-framework' )
+					'all' => _x( 'All Categories', 'posts widget', 'onechurch' )
 				) ),
 				'default'			=> 'all', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -127,7 +127,7 @@ class CTFW_Widget_Posts extends CTFW_Widget {
 
 			// Order By
 			'orderby' => array(
-				'name'				=> _x( 'Order By', 'posts widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Order By', 'posts widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'select', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -136,9 +136,9 @@ class CTFW_Widget_Posts extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array( // array of keys/values for radio or select
-					'title'				=> _x( 'Title', 'posts widget order by', 'church-theme-framework' ),
-					'publish_date'		=> _x( 'Date', 'posts widget order by', 'church-theme-framework' ),
-					'comment_count'		=> _x( 'Comment Count', 'posts widget order by', 'church-theme-framework' ),
+					'title'				=> _x( 'Title', 'posts widget order by', 'onechurch' ),
+					'publish_date'		=> _x( 'Date', 'posts widget order by', 'onechurch' ),
+					'comment_count'		=> _x( 'Comment Count', 'posts widget order by', 'onechurch' ),
 				),
 				'default'			=> 'publish_date', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -163,8 +163,8 @@ class CTFW_Widget_Posts extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array( // array of keys/values for radio or select
-					'asc'	=> _x( 'Low to High', 'posts widget order', 'church-theme-framework' ),
-					'desc'	=> _x( 'High to Low', 'posts widget order', 'church-theme-framework' ),
+					'asc'	=> _x( 'Low to High', 'posts widget order', 'onechurch' ),
+					'desc'	=> _x( 'High to Low', 'posts widget order', 'onechurch' ),
 				),
 				'default'			=> 'desc', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -180,7 +180,7 @@ class CTFW_Widget_Posts extends CTFW_Widget {
 
 			// Limit
 			'limit' => array(
-				'name'				=> _x( 'Limit', 'posts widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Limit', 'posts widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'number', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -207,7 +207,7 @@ class CTFW_Widget_Posts extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show image', 'posts widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show image', 'posts widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
@@ -233,7 +233,7 @@ class CTFW_Widget_Posts extends CTFW_Widget {
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
-				'checkbox_label'	=> _x( 'Show date', 'posts widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show date', 'posts widget', 'onechurch' ), //show text after checkbox
 				'options'			=> array(), // array of keys/values for radio or select
 				'default'			=> true, // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
@@ -256,7 +256,7 @@ class CTFW_Widget_Posts extends CTFW_Widget {
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
-				'checkbox_label'	=> _x( 'Show author', 'posts widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show author', 'posts widget', 'onechurch' ), //show text after checkbox
 				'options'			=> array(), // array of keys/values for radio or select
 				'default'			=> false, // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
@@ -279,7 +279,7 @@ class CTFW_Widget_Posts extends CTFW_Widget {
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
-				'checkbox_label'	=> _x( 'Show category', 'posts widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show category', 'posts widget', 'onechurch' ), //show text after checkbox
 				'options'			=> array(), // array of keys/values for radio or select
 				'default'			=> false, // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
@@ -299,7 +299,7 @@ class CTFW_Widget_Posts extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show excerpt', 'posts widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show excerpt', 'posts widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type

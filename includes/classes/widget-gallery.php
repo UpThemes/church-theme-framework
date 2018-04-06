@@ -29,9 +29,9 @@ class CTFW_Widget_Gallery extends CTFW_Widget {
 
 		parent::__construct(
 			'ctfw-gallery',
-			_x( 'CT Gallery', 'gallery widget', 'church-theme-framework' ),
+			_x( 'CT Gallery', 'gallery widget', 'onechurch' ),
 			array(
-				'description' => __( 'Shows gallery thumbnails', 'church-theme-framework' )
+				'description' => __( 'Shows gallery thumbnails', 'onechurch' )
 			)
 		);
 
@@ -53,7 +53,7 @@ class CTFW_Widget_Gallery extends CTFW_Widget {
 			'exclude_empty' => false
 		) );
 		$gallery_posts_options = array();
-		$gallery_posts_options['all'] = _x( 'All Galleries', 'gallery widget', 'church-theme-framework' );
+		$gallery_posts_options['all'] = _x( 'All Galleries', 'gallery widget', 'onechurch' );
 		foreach ( $gallery_posts as $gallery_post_id => $gallery_post_data ) {
 			$gallery_posts_options[$gallery_post_id] = $gallery_post_data['post']->post_title;
 		}
@@ -64,9 +64,9 @@ class CTFW_Widget_Gallery extends CTFW_Widget {
 			// Example
 			/*
 			'field_id' => array(
-				'name'				=> __( 'Field Name', 'church-theme-framework' ),
+				'name'				=> __( 'Field Name', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
-				'desc'				=> __( 'This is the description below the field.', 'church-theme-framework' ),
+				'desc'				=> __( 'This is the description below the field.', 'onechurch' ),
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
 				'checkbox_label'	=> '', //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
@@ -88,7 +88,7 @@ class CTFW_Widget_Gallery extends CTFW_Widget {
 
 			// Title
 			'title' => array(
-				'name'				=> _x( 'Title', 'gallery widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Title', 'gallery widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -97,7 +97,7 @@ class CTFW_Widget_Gallery extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array(), // array of keys/values for radio or select
-				'default'			=> _x( 'Gallery', 'gallery widget title default', 'church-theme-framework' ), // value to pre-populate option with (before first save or on reset)
+				'default'			=> _x( 'Gallery', 'gallery widget title default', 'onechurch' ), // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> false, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(), // attributes to add to input element
@@ -111,7 +111,7 @@ class CTFW_Widget_Gallery extends CTFW_Widget {
 
 			// Gallery
 			'post_id' => array(
-				'name'				=> _x( 'Gallery', 'gallery widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Gallery', 'gallery widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'select', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -138,7 +138,7 @@ class CTFW_Widget_Gallery extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show link to gallery', 'gallery widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show link to gallery', 'gallery widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
@@ -157,7 +157,7 @@ class CTFW_Widget_Gallery extends CTFW_Widget {
 
 			// Order By
 			'orderby' => array(
-				'name'				=> _x( 'Order By', 'gallery widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Order By', 'gallery widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'select', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -166,9 +166,9 @@ class CTFW_Widget_Gallery extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array( // array of keys/values for radio or select
-					'publish_date'		=> _x( 'Upload Date', 'gallery widget order by', 'church-theme-framework' ),
-					'title'				=> _x( 'Title', 'gallery widget order by', 'church-theme-framework' ),
-					'comment_count'		=> _x( 'Comment Count', 'gallery widget order by', 'church-theme-framework' ),
+					'publish_date'		=> _x( 'Upload Date', 'gallery widget order by', 'onechurch' ),
+					'title'				=> _x( 'Title', 'gallery widget order by', 'onechurch' ),
+					'comment_count'		=> _x( 'Comment Count', 'gallery widget order by', 'onechurch' ),
 				),
 				'default'			=> 'publish_date', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -193,8 +193,8 @@ class CTFW_Widget_Gallery extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array( // array of keys/values for radio or select
-					'asc'	=> _x( 'Low to High', 'gallery widget order', 'church-theme-framework' ),
-					'desc'	=> _x( 'High to Low', 'gallery widget order', 'church-theme-framework' ),
+					'asc'	=> _x( 'Low to High', 'gallery widget order', 'onechurch' ),
+					'desc'	=> _x( 'High to Low', 'gallery widget order', 'onechurch' ),
 				),
 				'default'			=> 'desc', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -210,7 +210,7 @@ class CTFW_Widget_Gallery extends CTFW_Widget {
 
 			// Limit
 			'limit' => array(
-				'name'				=> _x( 'Limit', 'gallery widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Limit', 'gallery widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'number', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -233,7 +233,7 @@ class CTFW_Widget_Gallery extends CTFW_Widget {
 
 			// Thumbnail Size
 			'thumb_size' => array(
-				'name'				=> _x( 'Thumbnail Size', 'gallery widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Thumbnail Size', 'gallery widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'radio', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -242,9 +242,9 @@ class CTFW_Widget_Gallery extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array( // array of keys/values for radio or select
-					'small'				=> _x( 'Small', 'gallery widget', 'church-theme-framework' ),
-					'medium'		=> _x( 'Medium', 'gallery widget', 'church-theme-framework' ),
-					'large'		=> _x( 'Large', 'gallery widget', 'church-theme-framework' ),
+					'small'				=> _x( 'Small', 'gallery widget', 'onechurch' ),
+					'medium'		=> _x( 'Medium', 'gallery widget', 'onechurch' ),
+					'large'		=> _x( 'Large', 'gallery widget', 'onechurch' ),
 				),
 				'default'			=> 'medium', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead

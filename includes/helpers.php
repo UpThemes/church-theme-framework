@@ -280,7 +280,7 @@ function ctfw_shorten( $string, $max_chars ) {
 			// Append ... if string was shortened
 			if ( mb_strlen( $processed_string ) < mb_strlen( $string ) ) {
 				/* translators: ... after shortened string */
-				$processed_string .= _x( '&hellip;', 'shortened text', 'church-theme-framework' );
+				$processed_string .= _x( '&hellip;', 'shortened text', 'onechurch' );
 			}
 
 		}
@@ -301,7 +301,7 @@ function ctfw_shorten( $string, $max_chars ) {
 			// Append ... if string was shortened
 			if ( strlen( $processed_string ) < strlen( $string ) ) {
 				/* translators: ... after shortened string */
-				$processed_string .= _x( '&hellip;', 'shortened text', 'church-theme-framework' );
+				$processed_string .= _x( '&hellip;', 'shortened text', 'onechurch' );
 			}
 
 		}

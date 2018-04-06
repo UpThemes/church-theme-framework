@@ -71,10 +71,10 @@ function ctfw_edd_license_config( $arg = false ) {
 		'updates'					=> true,					// default true; enable automatic updates
 		'options_page'				=> true,					// default true; provide options page for license entry/activaton
 		'options_page_message'		=> '',						// optional message to show on options page
-		'activation_error_notice'	=> __( '<strong>License key could not be activated.</strong>', 'church-theme-framework' ),
-		'inactive_notice'			=> __( '<strong>Theme License Inactive:</strong> <a href="%1$s">Activate Your Theme License</a> to enable updates for the <strong>%2$s</strong> theme.', 'church-theme-framework' ),	// optional notice to override default with license is inactive
-		'expired_notice'			=> __( '<strong>Theme License Expired:</strong> <a href="%1$s">Renew Your Theme License</a> to re-enable updates for the <strong>%2$s</strong> theme (expired on <strong>%3$s</strong>).', 'church-theme-framework' ),	// optional notice to override default with when license is expired
-		'expiring_soon_notice'		=> __( '<strong>Theme License Expiring Soon:</strong> <a href="%1$s">Renew Your Theme License</a> to continue receiving updates for the <strong>%2$s</strong> theme (expires on <strong>%3$s</strong>).', 'church-theme-framework' ),	// optional notice to override default with when license expires soon
+		'activation_error_notice'	=> __( '<strong>License key could not be activated.</strong>', 'onechurch' ),
+		'inactive_notice'			=> __( '<strong>Theme License Inactive:</strong> <a href="%1$s">Activate Your Theme License</a> to enable updates for the <strong>%2$s</strong> theme.', 'onechurch' ),	// optional notice to override default with license is inactive
+		'expired_notice'			=> __( '<strong>Theme License Expired:</strong> <a href="%1$s">Renew Your Theme License</a> to re-enable updates for the <strong>%2$s</strong> theme (expired on <strong>%3$s</strong>).', 'onechurch' ),	// optional notice to override default with when license is expired
+		'expiring_soon_notice'		=> __( '<strong>Theme License Expiring Soon:</strong> <a href="%1$s">Renew Your Theme License</a> to continue receiving updates for the <strong>%2$s</strong> theme (expires on <strong>%3$s</strong>).', 'onechurch' ),	// optional notice to override default with when license expires soon
 		'expiring_soon_days'		=> 30,						// days before expiration to consider a license "expiring soon"
 		'renewal_url'				=> '',						// optional URL for renewal links (ie. EDD checkout); {license_key} will be replaced with key
 		'renewal_info_url'			=> '',						// optional URL for renewal information
@@ -340,7 +340,7 @@ function ctfw_edd_license_expiration_data() {
 	$data = array();
 
 	$data['expiration'] = get_option( ctfw_edd_license_key_option( 'expiration' ) );
-	$data['expiration_date'] = ctfw_edd_license_expiration_formatted( _x( 'unknown date', 'license expiration', 'church-theme-framework' ) );
+	$data['expiration_date'] = ctfw_edd_license_expiration_formatted( _x( 'unknown date', 'license expiration', 'onechurch' ) );
 	$data['expiration_ts'] = ! empty( $data['expiration'] ) ? strtotime( $data['expiration'] ) : '';
 	$data['expiring_soon_days'] = ctfw_edd_license_config( 'expiring_soon_days' );
 	$data['expiring_soon_ts'] = time() + ( DAY_IN_SECONDS * $data['expiring_soon_days'] );
@@ -366,8 +366,8 @@ function ctfw_edd_license_menu() {
 
 		// Add menu item and page
 		add_theme_page(
-			_x( 'Theme License', 'page title', 'church-theme-framework' ),
-			_x( 'Theme License', 'menu title', 'church-theme-framework' ),
+			_x( 'Theme License', 'page title', 'onechurch' ),
+			_x( 'Theme License', 'menu title', 'onechurch' ),
 			'manage_options',
 			'theme-license',
 			'ctfw_edd_license_page' // see below for output
@@ -392,7 +392,7 @@ function ctfw_edd_license_page() {
 	?>
 	<div class="wrap">
 
-		<h2><?php _ex( 'Theme License', 'page title', 'church-theme-framework' ); ?></h2>
+		<h2><?php _ex( 'Theme License', 'page title', 'onechurch' ); ?></h2>
 
 		<?php
 		$message = ctfw_edd_license_config( 'options_page_message' );
@@ -409,7 +409,7 @@ function ctfw_edd_license_page() {
 
 			<?php wp_nonce_field( 'ctfw_edd_license_nonce', 'ctfw_edd_license_nonce' ); ?>
 
-			<h3 class="title"><?php _ex( 'License Key', 'heading', 'church-theme-framework' ); ?></h3>
+			<h3 class="title"><?php _ex( 'License Key', 'heading', 'onechurch' ); ?></h3>
 
 			<table class="form-table">
 
@@ -418,7 +418,7 @@ function ctfw_edd_license_page() {
 					<tr valign="top">
 
 						<th scope="row" valign="top">
-							<?php _e( 'License Key', 'church-theme-framework' ); ?>
+							<?php _e( 'License Key', 'onechurch' ); ?>
 						</th>
 
 						<td>
@@ -431,11 +431,11 @@ function ctfw_edd_license_page() {
 
 			</table>
 
-			<?php submit_button( __( 'Save Key', 'church-theme-framework' ) ); ?>
+			<?php submit_button( __( 'Save Key', 'onechurch' ) ); ?>
 
 			<?php if ( $license ) : ?>
 
-			<h3 class="title"><?php _e( 'License Status', 'church-theme-framework' ); ?></h3>
+			<h3 class="title"><?php _e( 'License Status', 'onechurch' ); ?></h3>
 
 			<table class="form-table">
 
@@ -444,26 +444,26 @@ function ctfw_edd_license_page() {
 					<tr valign="top">
 
 						<th scope="row" valign="top">
-							<?php _e( 'License Status', 'church-theme-framework' ); ?>
+							<?php _e( 'License Status', 'onechurch' ); ?>
 						</th>
 
 						<td>
 
 							<?php if ( ctfw_edd_license_active() ) : ?>
 
-								<span class="ctfw-license-active"><?php _ex( 'Active', 'license key', 'church-theme-framework' ); ?></span>
+								<span class="ctfw-license-active"><?php _ex( 'Active', 'license key', 'onechurch' ); ?></span>
 
 								<?php if ( ctfw_edd_license_expiring_soon() ) : ?>
-									/ <span class="ctfw-license-expiring-soon"><?php _ex( 'Expiring Soon', 'license status', 'church-theme-framework' ); ?></span>
+									/ <span class="ctfw-license-expiring-soon"><?php _ex( 'Expiring Soon', 'license status', 'onechurch' ); ?></span>
 								<?php endif; ?>
 
 							<?php elseif ( ctfw_edd_license_expired() ) : ?>
 
-								<span class="ctfw-license-expired"><?php _ex( 'Expired', 'license key', 'church-theme-framework' ); ?></span>
+								<span class="ctfw-license-expired"><?php _ex( 'Expired', 'license key', 'onechurch' ); ?></span>
 
 							<?php else : ?>
 
-								<span class="ctfw-license-inactive"><?php _ex( 'Inactive', 'license key', 'church-theme-framework' ); ?></span>
+								<span class="ctfw-license-inactive"><?php _ex( 'Inactive', 'license key', 'onechurch' ); ?></span>
 
 							<?php endif; ?>
 
@@ -476,7 +476,7 @@ function ctfw_edd_license_page() {
 						<tr valign="top">
 
 							<th scope="row" valign="top">
-								<?php _e( 'License Expiration', 'church-theme-framework' ); ?>
+								<?php _e( 'License Expiration', 'onechurch' ); ?>
 							</th>
 
 							<td>
@@ -497,18 +497,18 @@ function ctfw_edd_license_page() {
 
 					<?php if ( ctfw_edd_license_active() ) : ?>
 
-						<input type="submit" class="button button-primary ctfw-license-button ctfw-license-deactivate-button" name="ctfw_edd_license_deactivate" value="<?php _e( 'Deactivate License', 'church-theme-framework' ); ?>" />
+						<input type="submit" class="button button-primary ctfw-license-button ctfw-license-deactivate-button" name="ctfw_edd_license_deactivate" value="<?php _e( 'Deactivate License', 'onechurch' ); ?>" />
 
 					<?php else : ?>
 
-						<input type="submit" class="button button-primary ctfw-license-button ctfw-license-activate-button" name="ctfw_edd_license_activate" value="<?php _e( 'Activate License', 'church-theme-framework' ); ?>" />
+						<input type="submit" class="button button-primary ctfw-license-button ctfw-license-activate-button" name="ctfw_edd_license_activate" value="<?php _e( 'Activate License', 'onechurch' ); ?>" />
 
 					<?php endif; ?>
 
 				<?php endif; ?>
 
 				<?php if ( ctfw_edd_license_config( 'renewal_url' ) && ( ctfw_edd_license_active() || ctfw_edd_license_expired() ) ) : // only if URL provided ?>
-					<input type="submit" id="ctfw-license-renew-button" class="button button<?php if ( ctfw_edd_license_expired() ) : ?>-primary<?php endif; ?> ctfw-license-button ctfw-license-renew-button" name="ctfw_edd_license_renew" value="<?php _e( 'Renew License', 'church-theme-framework' ); ?>" />
+					<input type="submit" id="ctfw-license-renew-button" class="button button<?php if ( ctfw_edd_license_expired() ) : ?>-primary<?php endif; ?> ctfw-license-button ctfw-license-renew-button" name="ctfw_edd_license_renew" value="<?php _e( 'Renew License', 'onechurch' ); ?>" />
 				<?php endif; ?>
 
 			</p>

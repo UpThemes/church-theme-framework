@@ -295,10 +295,10 @@ class CTFW_Widget extends WP_Widget {
 						$input .= '<div class="ctfw-widget-image-preview">' . wp_get_attachment_image( $data['value'], 'medium' ) . '</div>';
 
 						// Button to open media library
-						$input .= '<a href="#" class="button ctfw-widget-image-choose" data-ctfw-field-id="' . $data['esc_element_id'] . '">' . _x( 'Choose Image', 'widget image field', 'church-theme-framework' ) . '</a>';
+						$input .= '<a href="#" class="button ctfw-widget-image-choose" data-ctfw-field-id="' . $data['esc_element_id'] . '">' . _x( 'Choose Image', 'widget image field', 'onechurch' ) . '</a>';
 
 						// Button to remove image
-						$input .= '<a href="#" class="button ctfw-widget-image-remove">' . _x( 'Remove Image', 'widget image field', 'church-theme-framework' ) . '</a>';
+						$input .= '<a href="#" class="button ctfw-widget-image-remove">' . _x( 'Remove Image', 'widget image field', 'onechurch' ) . '</a>';
 
 						break;
 

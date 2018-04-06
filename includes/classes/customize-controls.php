@@ -68,7 +68,7 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 
 					?>
 
-						<li <?php echo $class_attr; ?><?php if ( $data['colorable'] ) : ?>data-customize-image-title="<?php _e( 'Colorable', 'church-theme-framework' ); ?>"<?php endif; ?>
+						<li <?php echo $class_attr; ?><?php if ( $data['colorable'] ) : ?>data-customize-image-title="<?php _e( 'Colorable', 'onechurch' ); ?>"<?php endif; ?>
 							data-customize-image-value="<?php echo esc_attr( $url ); ?>"
 							data-customize-image-preset-fullscreen="<?php echo esc_attr( $data['fullscreen'] ); ?>"
 							data-customize-image-preset-repeat="<?php echo esc_attr( $data['repeat'] ); ?>"
@@ -87,7 +87,7 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 			</ul>
 
 			<p class="ctfw-customize-background-image-preset-colorable" class="description" style="display: none">
-				<?php _e( 'The selected image is <strong>colorable</strong>.', 'church-theme-framework' ); ?>
+				<?php _e( 'The selected image is <strong>colorable</strong>.', 'onechurch' ); ?>
 			</p>
 
 			<?php
@@ -124,7 +124,7 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 
 			// Add presets tab (multiple)
 			if ( $this->presets ) {
-				$this->add_tab( 'ctfw_presets',  _x( 'Presets', 'customizer', 'church-theme-framework' ),  array( $this, 'tab_preset_backgrounds' ) );
+				$this->add_tab( 'ctfw_presets',  _x( 'Presets', 'customizer', 'onechurch' ),  array( $this, 'tab_preset_backgrounds' ) );
 			}
 
 			// Remove "Default" tab - user can select first in presets
@@ -147,7 +147,7 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 				$thumbnail_url = set_url_scheme( $data['thumb_url'] );
 
 				?>
-				<a href="#" class="thumbnail" <?php if ( $data['colorable'] ) : ?>data-customize-image-title="<?php _e( 'Colorable', 'church-theme-framework' ); ?>"<?php endif; ?>
+				<a href="#" class="thumbnail" <?php if ( $data['colorable'] ) : ?>data-customize-image-title="<?php _e( 'Colorable', 'onechurch' ); ?>"<?php endif; ?>
 					data-customize-image-value="<?php echo esc_url( $url ); ?>"
 					data-customize-image-preset-fullscreen="<?php echo esc_attr( $data['fullscreen'] ); ?>"
 					data-customize-image-preset-repeat="<?php echo esc_attr( $data['repeat'] ); ?>"

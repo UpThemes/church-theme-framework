@@ -91,7 +91,7 @@ function ctfw_google_map( $options = false ) {
 		wp_enqueue_script( 'ctfw-maps', ctfw_theme_url( CTFW_JS_DIR . '/maps.js' ), array( 'jquery', 'google-maps' ), CTFW_VERSION ); // bust cache on theme update
 
 	} elseif ( ! empty( $options['show_error'] ) ) {
-		$html = __( '<p><b>Google Map Error:</b> <i>latitude</i> and <i>longitude</i> attributes are required. See documentation for help.</p>', 'church-theme-framework' );
+		$html = __( '<p><b>Google Map Error:</b> <i>latitude</i> and <i>longitude</i> attributes are required. See documentation for help.</p>', 'onechurch' );
 	}
 
 	return apply_filters( 'ctfw_google_map', $html, $options );

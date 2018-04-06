@@ -29,9 +29,9 @@ class CTFW_Widget_Highlight extends CTFW_Widget {
 
 		parent::__construct(
 			'ctfw-highlight',
-			_x( 'CT Highlight', 'widget', 'church-theme-framework' ),
+			_x( 'CT Highlight', 'widget', 'onechurch' ),
 			array(
-				'description' => __( 'Shows a highlight', 'church-theme-framework' )
+				'description' => __( 'Shows a highlight', 'onechurch' )
 			)
 		);
 
@@ -53,9 +53,9 @@ class CTFW_Widget_Highlight extends CTFW_Widget {
 			// Example
 			/*
 			'field_id' => array(
-				'name'				=> __( 'Field Name', 'church-theme-framework' ),
+				'name'				=> __( 'Field Name', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
-				'desc'				=> __( 'This is the description below the field.', 'church-theme-framework' ),
+				'desc'				=> __( 'This is the description below the field.', 'onechurch' ),
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
 				'checkbox_label'	=> '', //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
@@ -77,7 +77,7 @@ class CTFW_Widget_Highlight extends CTFW_Widget {
 
 			// Title
 			'title' => array(
-				'name'				=> _x( 'Title', 'highlight widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Title', 'highlight widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -100,7 +100,7 @@ class CTFW_Widget_Highlight extends CTFW_Widget {
 
 			// Description
 			'description' => array(
-				'name'				=> _x( 'Description', 'highlight widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Description', 'highlight widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -123,7 +123,7 @@ class CTFW_Widget_Highlight extends CTFW_Widget {
 
 			// Click URL
 			'click_url' => array(
-				'name'				=> _x( 'Click URL', 'highlight widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Click URL', 'highlight widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'url', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -150,7 +150,7 @@ class CTFW_Widget_Highlight extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Open in new tab', 'highlight widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Open in new tab', 'highlight widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
@@ -169,7 +169,7 @@ class CTFW_Widget_Highlight extends CTFW_Widget {
 
 			// Image
 			'image_id' => array(
-				'name'				=> _x( 'Image', 'highlight widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Image', 'highlight widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'image', // text, textarea, checkbox, radio, select, number, url, image, color

@@ -58,7 +58,7 @@ function ctfw_old_wp() {
  * @return string Message saying version is old
  */
 function ctfw_old_wp_message() {
-	return sprintf( __( '<b>Activation Failed:</b> %s requires a newer version of WordPress. Please update and try again.', 'church-theme-framework' ), CTFW_THEME_NAME );
+	return sprintf( __( '<b>Activation Failed:</b> %s requires a newer version of WordPress. Please update and try again.', 'onechurch' ), CTFW_THEME_NAME );
 }
 
 /**
@@ -128,7 +128,7 @@ function ctfw_old_wp_customizer_notice() {
 	if ( ctfw_old_wp() ) {
 
 		// Show message
-		wp_die( ctfw_old_wp_message() . sprintf( ' <a href="javascript:history.go(-1);">%s</a>', __( 'Go back.', 'church-theme-framework' ) ) );
+		wp_die( ctfw_old_wp_message() . sprintf( ' <a href="javascript:history.go(-1);">%s</a>', __( 'Go back.', 'onechurch' ) ) );
 
 	}
 
@@ -225,7 +225,7 @@ function ctfw_ctc_plugin_notice() {
 	if ( ! ctfw_ctc_plugin_installed() && current_user_can( 'install_plugins' ) ) {
 
 		$notice = sprintf(
-			__( '<b>Plugin Required:</b> Please install and activate the <a href="%s" class="thickbox">Church Theme Content</a> plugin to use with the current theme.', 'church-theme-framework' ),
+			__( '<b>Plugin Required:</b> Please install and activate the <a href="%s" class="thickbox">Church Theme Content</a> plugin to use with the current theme.', 'onechurch' ),
 			network_admin_url( 'plugin-install.php?tab=plugin-information&plugin=' . ctfw_ctc_plugin_slug() . '&TB_iframe=true&width=700&height=450' )
 		);
 
@@ -235,7 +235,7 @@ function ctfw_ctc_plugin_notice() {
 	elseif ( ! ctfw_ctc_plugin_active() && current_user_can( 'activate_plugins' ) ) {
 
 		$notice = sprintf(
-			__( 'Please <a href="%s">activate</a> the <b>Church Theme Content</b> plugin required by the current theme.', 'church-theme-framework' ),
+			__( 'Please <a href="%s">activate</a> the <b>Church Theme Content</b> plugin required by the current theme.', 'onechurch' ),
 			wp_nonce_url( self_admin_url( 'plugins.php?action=activate&plugin=' . ctfw_ctc_plugin_file() ), 'activate-plugin_' . ctfw_ctc_plugin_file() )
 		);
 
@@ -303,7 +303,7 @@ function ctfw_enqueue_ie_unsupported() {
 			'min_version' => $min_version,
 			'max_version' => $max_version,
 			'version' => $version,
-			'message' => __( 'You are using an outdated version of Internet Explorer. Please upgrade your browser to use this site.', 'church-theme-framework' ),
+			'message' => __( 'You are using an outdated version of Internet Explorer. Please upgrade your browser to use this site.', 'onechurch' ),
 			'redirect_url' => apply_filters( 'ctfw_upgrade_browser_url', 'http://browsehappy.com/' )
 		) );
 

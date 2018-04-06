@@ -52,7 +52,7 @@ function ctfw_head_title( $title, $sep, $seplocation ) {
 		$page = ctfw_page_num();
 		if ( $page > 1 ) {
 			/* translators: page number in <title> */
-			$page_number = sprintf( _x( ' (Page %d)', 'head title', 'church-theme-framework' ), $page );
+			$page_number = sprintf( _x( ' (Page %d)', 'head title', 'onechurch' ), $page );
 		}
 
 		// Homepage (site name - tagline )
@@ -73,7 +73,7 @@ function ctfw_head_title( $title, $sep, $seplocation ) {
 		$new_title = $before;
 		if ( $after ) {
 			/* translators: separator for <title> content */
-			$new_title .= _x( ' - ', 'head title', 'church-theme-framework' ) . $after;
+			$new_title .= _x( ' - ', 'head title', 'onechurch' ) . $after;
 		}
 
 	}

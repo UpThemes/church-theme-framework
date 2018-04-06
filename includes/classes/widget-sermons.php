@@ -29,9 +29,9 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 
 		parent::__construct(
 			'ctfw-sermons',
-			_x( 'CT Sermons', 'widget', 'church-theme-framework' ),
+			_x( 'CT Sermons', 'widget', 'onechurch' ),
 			array(
-				'description' => __( 'Shows sermons according to options', 'church-theme-framework' )
+				'description' => __( 'Shows sermons according to options', 'onechurch' )
 			)
 		);
 
@@ -53,9 +53,9 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 			// Example
 			/*
 			'field_id' => array(
-				'name'				=> __( 'Field Name', 'church-theme-framework' ),
+				'name'				=> __( 'Field Name', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
-				'desc'				=> __( 'This is the description below the field.', 'church-theme-framework' ),
+				'desc'				=> __( 'This is the description below the field.', 'onechurch' ),
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
 				'checkbox_label'	=> '', //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
@@ -77,7 +77,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 
 			// Title
 			'title' => array(
-				'name'				=> _x( 'Title', 'sermons widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Title', 'sermons widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -86,7 +86,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array(), // array of keys/values for radio or select
-				'default'			=> _x( 'Sermons', 'sermons widget title default', 'church-theme-framework' ), // value to pre-populate option with (before first save or on reset)
+				'default'			=> _x( 'Sermons', 'sermons widget title default', 'onechurch' ), // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> false, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(), // attributes to add to input element
@@ -100,7 +100,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 
 			// Topic
 			'topic' => array(
-				'name'				=> _x( 'Topic', 'sermons widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Topic', 'sermons widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'select', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -109,7 +109,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> ctfw_term_options( 'ctc_sermon_topic', array( // array of keys/values for radio or select
-					'all' => _x( 'All Topics', 'sermons widget', 'church-theme-framework' )
+					'all' => _x( 'All Topics', 'sermons widget', 'onechurch' )
 				) ),
 				'default'			=> 'all', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -125,7 +125,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 
 			// Book
 			'book' => array(
-				'name'				=> _x( 'Book', 'sermons widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Book', 'sermons widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'select', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -134,7 +134,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> ctfw_term_options( 'ctc_sermon_book', array( // array of keys/values for radio or select
-					'all' => _x( 'All Books', 'sermons widget', 'church-theme-framework' )
+					'all' => _x( 'All Books', 'sermons widget', 'onechurch' )
 				) ),
 				'default'			=> 'all', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -150,7 +150,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 
 			// Series
 			'series' => array(
-				'name'				=> _x( 'Series', 'sermons widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Series', 'sermons widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'select', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -159,7 +159,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> ctfw_term_options( 'ctc_sermon_series', array( // array of keys/values for radio or select
-					'all' => _x( 'All Series', 'sermons widget', 'church-theme-framework' )
+					'all' => _x( 'All Series', 'sermons widget', 'onechurch' )
 				) ),
 				'default'			=> 'all', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -175,7 +175,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 
 			// Speaker
 			'speaker' => array(
-				'name'				=> _x( 'Speaker', 'sermons widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Speaker', 'sermons widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'select', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -184,7 +184,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> ctfw_term_options( 'ctc_sermon_speaker', array( // array of keys/values for radio or select
-					'all' => _x( 'All Speakers', 'sermons widget', 'church-theme-framework' )
+					'all' => _x( 'All Speakers', 'sermons widget', 'onechurch' )
 				) ),
 				'default'			=> 'all', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -200,7 +200,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 
 			// Order By
 			'orderby' => array(
-				'name'				=> _x( 'Order By', 'sermons widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Order By', 'sermons widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'select', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -209,9 +209,9 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array( // array of keys/values for radio or select
-					'title'				=> _x( 'Title', 'sermons widget order by', 'church-theme-framework' ),
-					'publish_date'		=> _x( 'Date', 'sermons widget order by', 'church-theme-framework' ),
-					'comment_count'		=> _x( 'Comment Count', 'sermons widget order by', 'church-theme-framework' ),
+					'title'				=> _x( 'Title', 'sermons widget order by', 'onechurch' ),
+					'publish_date'		=> _x( 'Date', 'sermons widget order by', 'onechurch' ),
+					'comment_count'		=> _x( 'Comment Count', 'sermons widget order by', 'onechurch' ),
 				),
 				'default'			=> 'publish_date', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -236,8 +236,8 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array( // array of keys/values for radio or select
-					'asc'	=> _x( 'Low to High', 'sermons widget order', 'church-theme-framework' ),
-					'desc'	=> _x( 'High to Low', 'sermons widget order', 'church-theme-framework' ),
+					'asc'	=> _x( 'Low to High', 'sermons widget order', 'onechurch' ),
+					'desc'	=> _x( 'High to Low', 'sermons widget order', 'onechurch' ),
 				),
 				'default'			=> 'desc', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -253,7 +253,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 
 			// Limit
 			'limit' => array(
-				'name'				=> _x( 'Limit', 'sermons widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Limit', 'sermons widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'number', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -280,7 +280,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show image', 'sermons widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show image', 'sermons widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
@@ -306,7 +306,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
-				'checkbox_label'	=> _x( 'Show date', 'sermons widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show date', 'sermons widget', 'onechurch' ), //show text after checkbox
 				'options'			=> array(), // array of keys/values for radio or select
 				'default'			=> true, // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
@@ -329,7 +329,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
-				'checkbox_label'	=> _x( 'Show topic', 'sermons widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show topic', 'sermons widget', 'onechurch' ), //show text after checkbox
 				'options'			=> array(), // array of keys/values for radio or select
 				'default'			=> false, // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
@@ -352,7 +352,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
-				'checkbox_label'	=> _x( 'Show book', 'sermons widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show book', 'sermons widget', 'onechurch' ), //show text after checkbox
 				'options'			=> array(), // array of keys/values for radio or select
 				'default'			=> false, // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
@@ -375,7 +375,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
-				'checkbox_label'	=> _x( 'Show series', 'sermons widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show series', 'sermons widget', 'onechurch' ), //show text after checkbox
 				'options'			=> array(), // array of keys/values for radio or select
 				'default'			=> false, // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
@@ -398,7 +398,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
-				'checkbox_label'	=> _x( 'Show speaker', 'sermons widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show speaker', 'sermons widget', 'onechurch' ), //show text after checkbox
 				'options'			=> array(), // array of keys/values for radio or select
 				'default'			=> false, // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
@@ -418,7 +418,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show media types', 'sermons widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show media types', 'sermons widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
@@ -441,7 +441,7 @@ class CTFW_Widget_Sermons extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show excerpt', 'sermons widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show excerpt', 'sermons widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type

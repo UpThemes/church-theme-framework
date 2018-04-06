@@ -264,7 +264,7 @@ function ctfw_get_month_archives( $post_type, $args = array() ) {
 
 		// 'name' that is automatically localized (key matches taxonomy term object)
 		/* translators: 1: month name, 2: 4-digit year */
-		$archives[$archive_key]->name = sprintf( _x('%1$s %2$d', 'month archive', 'church-theme-framework' ), $wp_locale->get_month( $archives[$archive_key]->month ), $archives[$archive_key]->year );
+		$archives[$archive_key]->name = sprintf( _x('%1$s %2$d', 'month archive', 'onechurch' ), $wp_locale->get_month( $archives[$archive_key]->month ), $archives[$archive_key]->year );
 
 		// URL
 		$archives[$archive_key]->url = ctfw_post_type_get_month_link( $archive->year, $archive->month, $post_type );

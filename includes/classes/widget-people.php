@@ -29,9 +29,9 @@ class CTFW_Widget_People extends CTFW_Widget {
 
 		parent::__construct(
 			'ctfw-people',
-			_x( 'CT People', 'widget', 'church-theme-framework' ),
+			_x( 'CT People', 'widget', 'onechurch' ),
 			array(
-				'description' => __( 'Shows people according to options', 'church-theme-framework' )
+				'description' => __( 'Shows people according to options', 'onechurch' )
 			)
 		);
 
@@ -53,9 +53,9 @@ class CTFW_Widget_People extends CTFW_Widget {
 			// Example
 			/*
 			'field_id' => array(
-				'name'				=> __( 'Field Name', 'church-theme-framework' ),
+				'name'				=> __( 'Field Name', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
-				'desc'				=> __( 'This is the description below the field.', 'church-theme-framework' ),
+				'desc'				=> __( 'This is the description below the field.', 'onechurch' ),
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
 				'checkbox_label'	=> '', //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
@@ -77,7 +77,7 @@ class CTFW_Widget_People extends CTFW_Widget {
 
 			// Title
 			'title' => array(
-				'name'				=> _x( 'Title', 'people widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Title', 'people widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -86,7 +86,7 @@ class CTFW_Widget_People extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array(), // array of keys/values for radio or select
-				'default'			=> _x( 'People', 'people widget title default', 'church-theme-framework' ), // value to pre-populate option with (before first save or on reset)
+				'default'			=> _x( 'People', 'people widget title default', 'onechurch' ), // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> false, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(), // attributes to add to input element
@@ -100,7 +100,7 @@ class CTFW_Widget_People extends CTFW_Widget {
 
 			// Group
 			'group' => array(
-				'name'				=> _x( 'Group', 'people widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Group', 'people widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'select', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -109,7 +109,7 @@ class CTFW_Widget_People extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> ctfw_term_options( 'ctc_person_group', array( // array of keys/values for radio or select
-					'all' => _x( 'All Groups', 'people widget', 'church-theme-framework' )
+					'all' => _x( 'All Groups', 'people widget', 'onechurch' )
 				) ),
 				'default'			=> 'all', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -125,7 +125,7 @@ class CTFW_Widget_People extends CTFW_Widget {
 
 			// Order By
 			'orderby' => array(
-				'name'				=> _x( 'Order By', 'people widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Order By', 'people widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'select', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -134,8 +134,8 @@ class CTFW_Widget_People extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array( // array of keys/values for radio or select
-					'menu_order'		=> _x( 'Custom Order', 'people widget order by', 'church-theme-framework' ),
-					'title'				=> _x( 'Name', 'people widget order by', 'church-theme-framework' ),
+					'menu_order'		=> _x( 'Custom Order', 'people widget order by', 'onechurch' ),
+					'title'				=> _x( 'Name', 'people widget order by', 'onechurch' ),
 				),
 				'default'			=> 'menu_order', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -160,8 +160,8 @@ class CTFW_Widget_People extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array( // array of keys/values for radio or select
-					'asc'	=> _x( 'Low to High', 'people widget order', 'church-theme-framework' ),
-					'desc'	=> _x( 'High to Low', 'people widget order', 'church-theme-framework' ),
+					'asc'	=> _x( 'Low to High', 'people widget order', 'onechurch' ),
+					'desc'	=> _x( 'High to Low', 'people widget order', 'onechurch' ),
 				),
 				'default'			=> 'asc', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -177,7 +177,7 @@ class CTFW_Widget_People extends CTFW_Widget {
 
 			// Limit
 			'limit' => array(
-				'name'				=> _x( 'Limit', 'people widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Limit', 'people widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'number', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -204,7 +204,7 @@ class CTFW_Widget_People extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show photo', 'people widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show photo', 'people widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
@@ -227,7 +227,7 @@ class CTFW_Widget_People extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show position', 'people widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show position', 'people widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
@@ -250,7 +250,7 @@ class CTFW_Widget_People extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show phone', 'people widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show phone', 'people widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
@@ -273,7 +273,7 @@ class CTFW_Widget_People extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show email', 'people widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show email', 'people widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
@@ -296,7 +296,7 @@ class CTFW_Widget_People extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show icons', 'people widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show icons', 'people widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
@@ -319,7 +319,7 @@ class CTFW_Widget_People extends CTFW_Widget {
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'checkbox', // text, textarea, checkbox, radio, select, number, url, image, color
-				'checkbox_label'	=> _x( 'Show excerpt', 'posts widget', 'church-theme-framework' ), //show text after checkbox
+				'checkbox_label'	=> _x( 'Show excerpt', 'posts widget', 'onechurch' ), //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type

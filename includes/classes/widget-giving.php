@@ -29,9 +29,9 @@ class CTFW_Widget_Giving extends CTFW_Widget {
 
 		parent::__construct(
 			'ctfw-giving',
-			_x( 'CT Giving', 'widget', 'church-theme-framework' ),
+			_x( 'CT Giving', 'widget', 'onechurch' ),
 			array(
-				'description' => __( 'Shows a message and button', 'church-theme-framework' ),
+				'description' => __( 'Shows a message and button', 'onechurch' ),
 			)
 		);
 
@@ -53,9 +53,9 @@ class CTFW_Widget_Giving extends CTFW_Widget {
 			// Example
 			/*
 			'field_id' => array(
-				'name'				=> __( 'Field Name', 'church-theme-framework' ),
+				'name'				=> __( 'Field Name', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
-				'desc'				=> __( 'This is the description below the field.', 'church-theme-framework' ),
+				'desc'				=> __( 'This is the description below the field.', 'onechurch' ),
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
 				'checkbox_label'	=> '', //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
@@ -77,7 +77,7 @@ class CTFW_Widget_Giving extends CTFW_Widget {
 
 			// Title
 			'title' => array(
-				'name'				=> _x( 'Title', 'giving widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Title', 'giving widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -86,7 +86,7 @@ class CTFW_Widget_Giving extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array(), // array of keys/values for radio or select
-				'default'			=> _x( 'Giving', 'giving widget default title', 'church-theme-framework' ), // value to pre-populate option with (before first save or on reset)
+				'default'			=> _x( 'Giving', 'giving widget default title', 'onechurch' ), // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> false, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(), // attributes to add to input element
@@ -100,7 +100,7 @@ class CTFW_Widget_Giving extends CTFW_Widget {
 
 			// Message
 			'text' => array(
-				'name'				=> _x( 'Message', 'giving widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Message', 'giving widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'textarea', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -109,7 +109,7 @@ class CTFW_Widget_Giving extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array(), // array of keys/values for radio or select
-				'default'			=> __( 'You may give online by clicking below.', 'church-theme-framework' ), // value to pre-populate option with (before first save or on reset)
+				'default'			=> __( 'You may give online by clicking below.', 'onechurch' ), // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> true, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(), // attributes to add to input element
@@ -123,7 +123,7 @@ class CTFW_Widget_Giving extends CTFW_Widget {
 
 			// Button Text
 			'button_text' => array(
-				'name'				=> _x( 'Button Text', 'giving widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Button Text', 'giving widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -132,7 +132,7 @@ class CTFW_Widget_Giving extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array(), // array of keys/values for radio or select
-				'default'			=> _x( 'Give Now', 'giving widget', 'church-theme-framework' ), // value to pre-populate option with (before first save or on reset)
+				'default'			=> _x( 'Give Now', 'giving widget', 'onechurch' ), // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> false, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(), // attributes to add to input element
@@ -146,7 +146,7 @@ class CTFW_Widget_Giving extends CTFW_Widget {
 
 			// Button URL
 			'button_url' => array(
-				'name'				=> _x( 'Button URL', 'giving widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Button URL', 'giving widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'url', // text, textarea, checkbox, radio, select, number, url, image, color

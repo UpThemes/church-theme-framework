@@ -160,205 +160,205 @@ function ctfw_bible_books() {
 
 	$books['old_testament'] = array(
 		array(
-			'name'	=> __( 'Genesis', 'church-theme-framework' ),
+			'name'	=> __( 'Genesis', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Exodus', 'church-theme-framework' ),
+			'name'	=> __( 'Exodus', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Leviticus', 'church-theme-framework' ),
+			'name'	=> __( 'Leviticus', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Numbers', 'church-theme-framework' ),
+			'name'	=> __( 'Numbers', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Deuteronomy', 'church-theme-framework' ),
+			'name'	=> __( 'Deuteronomy', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Joshua', 'church-theme-framework' ),
+			'name'	=> __( 'Joshua', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Judges', 'church-theme-framework' ),
+			'name'	=> __( 'Judges', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Ruth', 'church-theme-framework' ),
+			'name'	=> __( 'Ruth', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( '1 Samuel', 'church-theme-framework' ),
+			'name'	=> __( '1 Samuel', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( '2 Samuel', 'church-theme-framework' ),
+			'name'	=> __( '2 Samuel', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( '1 Kings', 'church-theme-framework' ),
+			'name'	=> __( '1 Kings', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( '2 Kings', 'church-theme-framework' ),
+			'name'	=> __( '2 Kings', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( '1 Chronicles', 'church-theme-framework' ),
+			'name'	=> __( '1 Chronicles', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( '2 Chronicles', 'church-theme-framework' ),
+			'name'	=> __( '2 Chronicles', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Ezra', 'church-theme-framework' ),
+			'name'	=> __( 'Ezra', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Nehemiah', 'church-theme-framework' ),
+			'name'	=> __( 'Nehemiah', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Esther', 'church-theme-framework' ),
+			'name'	=> __( 'Esther', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Job', 'church-theme-framework' ),
+			'name'	=> __( 'Job', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Psalms', 'church-theme-framework' ),
+			'name'	=> __( 'Psalms', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Proverbs', 'church-theme-framework' ),
+			'name'	=> __( 'Proverbs', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Ecclesiastes', 'church-theme-framework' ),
+			'name'	=> __( 'Ecclesiastes', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Song of Solomon', 'church-theme-framework' ),
+			'name'	=> __( 'Song of Solomon', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Isaiah', 'church-theme-framework' ),
+			'name'	=> __( 'Isaiah', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Jeremiah', 'church-theme-framework' ),
+			'name'	=> __( 'Jeremiah', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Lamentations', 'church-theme-framework' ),
+			'name'	=> __( 'Lamentations', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Ezekiel', 'church-theme-framework' ),
+			'name'	=> __( 'Ezekiel', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Daniel', 'church-theme-framework' ),
+			'name'	=> __( 'Daniel', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Hosea', 'church-theme-framework' ),
+			'name'	=> __( 'Hosea', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Joel', 'church-theme-framework' ),
+			'name'	=> __( 'Joel', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Amos', 'church-theme-framework' ),
+			'name'	=> __( 'Amos', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Obadiah', 'church-theme-framework' ),
+			'name'	=> __( 'Obadiah', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Jonah', 'church-theme-framework' ),
+			'name'	=> __( 'Jonah', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Micah', 'church-theme-framework' ),
+			'name'	=> __( 'Micah', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Nahum', 'church-theme-framework' ),
+			'name'	=> __( 'Nahum', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Habakkuk', 'church-theme-framework' ),
+			'name'	=> __( 'Habakkuk', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Zephaniah', 'church-theme-framework' ),
+			'name'	=> __( 'Zephaniah', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Haggai', 'church-theme-framework' ),
+			'name'	=> __( 'Haggai', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Zechariah', 'church-theme-framework' ),
+			'name'	=> __( 'Zechariah', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Malachi', 'church-theme-framework' ),
+			'name'	=> __( 'Malachi', 'onechurch' ),
 		),
 	);
 
 	$books['new_testament'] = array(
 		array(
-			'name'	=> __( 'Matthew', 'church-theme-framework' ),
+			'name'	=> __( 'Matthew', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Mark', 'church-theme-framework' ),
+			'name'	=> __( 'Mark', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Luke', 'church-theme-framework' ),
+			'name'	=> __( 'Luke', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'John', 'church-theme-framework' ),
+			'name'	=> __( 'John', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Acts', 'church-theme-framework' ),
+			'name'	=> __( 'Acts', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Romans', 'church-theme-framework' ),
+			'name'	=> __( 'Romans', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( '1 Corinthians', 'church-theme-framework' ),
+			'name'	=> __( '1 Corinthians', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( '2 Corinthians', 'church-theme-framework' ),
+			'name'	=> __( '2 Corinthians', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Galatians', 'church-theme-framework' ),
+			'name'	=> __( 'Galatians', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Ephesians', 'church-theme-framework' ),
+			'name'	=> __( 'Ephesians', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Philippians', 'church-theme-framework' ),
+			'name'	=> __( 'Philippians', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Colossians', 'church-theme-framework' ),
+			'name'	=> __( 'Colossians', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( '1 Thessalonians', 'church-theme-framework' ),
+			'name'	=> __( '1 Thessalonians', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( '2 Thessalonians', 'church-theme-framework' ),
+			'name'	=> __( '2 Thessalonians', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( '1 Timothy', 'church-theme-framework' ),
+			'name'	=> __( '1 Timothy', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( '2 Timothy', 'church-theme-framework' ),
+			'name'	=> __( '2 Timothy', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Titus', 'church-theme-framework' ),
+			'name'	=> __( 'Titus', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Philemon', 'church-theme-framework' ),
+			'name'	=> __( 'Philemon', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Hebrews', 'church-theme-framework' ),
+			'name'	=> __( 'Hebrews', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'James', 'church-theme-framework' ),
+			'name'	=> __( 'James', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( '1 Peter', 'church-theme-framework' ),
+			'name'	=> __( '1 Peter', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( '2 Peter', 'church-theme-framework' ),
+			'name'	=> __( '2 Peter', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( '1 John', 'church-theme-framework' ),
+			'name'	=> __( '1 John', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( '2 John', 'church-theme-framework' ),
+			'name'	=> __( '2 John', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( '3 John', 'church-theme-framework' ),
+			'name'	=> __( '3 John', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Jude', 'church-theme-framework' ),
+			'name'	=> __( 'Jude', 'onechurch' ),
 		),
 		array(
-			'name'	=> __( 'Revelation', 'church-theme-framework' ),
+			'name'	=> __( 'Revelation', 'onechurch' ),
 		),
 	);
 
@@ -400,14 +400,14 @@ function ctfw_sermon_books_by_testament() {
 	// Old new and other testaments
 	$books_by_testament = array(
 		'old' => array(
-			'name' => __( 'Old Testament', 'church-theme-framework' ),
+			'name' => __( 'Old Testament', 'onechurch' ),
 		),
 		'new' => array(
-			'name' => __( 'New Testament', 'church-theme-framework' ),
+			'name' => __( 'New Testament', 'onechurch' ),
 		),
 		'other' => array(
 			/* translators: Label for books not in the Old or New Testaments */
-			'name' => __( 'Other Books', 'church-theme-framework' ),
+			'name' => __( 'Other Books', 'onechurch' ),
 		),
 	);
 

@@ -31,9 +31,9 @@ class CTFW_Widget_Galleries extends CTFW_Widget {
 
 		parent::__construct(
 			'ctfw-galleries',
-			_x( 'CT Galleries', 'widget', 'church-theme-framework' ),
+			_x( 'CT Galleries', 'widget', 'onechurch' ),
 			array(
-				'description' => __( 'Shows list of gallery pages', 'church-theme-framework' )
+				'description' => __( 'Shows list of gallery pages', 'onechurch' )
 			)
 		);
 
@@ -55,9 +55,9 @@ class CTFW_Widget_Galleries extends CTFW_Widget {
 			// Example
 			/*
 			'field_id' => array(
-				'name'				=> __( 'Field Name', 'church-theme-framework' ),
+				'name'				=> __( 'Field Name', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
-				'desc'				=> __( 'This is the description below the field.', 'church-theme-framework' ),
+				'desc'				=> __( 'This is the description below the field.', 'onechurch' ),
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
 				'checkbox_label'	=> '', //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other
@@ -79,7 +79,7 @@ class CTFW_Widget_Galleries extends CTFW_Widget {
 
 			// Title
 			'title' => array(
-				'name'				=> _x( 'Title', 'galleries widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Title', 'galleries widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'text', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -88,7 +88,7 @@ class CTFW_Widget_Galleries extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array(), // array of keys/values for radio or select
-				'default'			=> _x( 'Galleries', 'galleries widget title default', 'church-theme-framework' ), // value to pre-populate option with (before first save or on reset)
+				'default'			=> _x( 'Galleries', 'galleries widget title default', 'onechurch' ), // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> false, // if user empties value, force default to be saved instead
 				'allow_html'		=> false, // allow HTML to be used in the value (text, textarea)
 				'attributes'		=> array(), // attributes to add to input element
@@ -102,7 +102,7 @@ class CTFW_Widget_Galleries extends CTFW_Widget {
 
 			// Order By
 			'orderby' => array(
-				'name'				=> _x( 'Order By', 'galleries widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Order By', 'galleries widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
 				'desc'				=> '',
 				'type'				=> 'select', // text, textarea, checkbox, radio, select, number, url, image, color
@@ -111,8 +111,8 @@ class CTFW_Widget_Galleries extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array( // array of keys/values for radio or select
-					'date'		=> _x( 'Date Added', 'galleries widget order by', 'church-theme-framework' ),
-					'title'		=> _x( 'Title', 'galleries widget order by', 'church-theme-framework' ),
+					'date'		=> _x( 'Date Added', 'galleries widget order by', 'onechurch' ),
+					'title'		=> _x( 'Title', 'galleries widget order by', 'onechurch' ),
 				),
 				'default'			=> 'date', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -137,8 +137,8 @@ class CTFW_Widget_Galleries extends CTFW_Widget {
 				'number_min'		=> '', // lowest possible value for number type
 				'number_max'		=> '', // highest possible value for number type
 				'options'			=> array( // array of keys/values for radio or select
-					'asc'	=> _x( 'Low to High', 'galleries widget order', 'church-theme-framework' ),
-					'desc'	=> _x( 'High to Low', 'galleries widget order', 'church-theme-framework' ),
+					'asc'	=> _x( 'Low to High', 'galleries widget order', 'onechurch' ),
+					'desc'	=> _x( 'High to Low', 'galleries widget order', 'onechurch' ),
 				),
 				'default'			=> 'desc', // value to pre-populate option with (before first save or on reset)
 				'no_empty'			=> true, // if user empties value, force default to be saved instead
@@ -154,9 +154,9 @@ class CTFW_Widget_Galleries extends CTFW_Widget {
 
 			// Limit
 			'limit' => array(
-				'name'				=> _x( 'Limit', 'galleries widget', 'church-theme-framework' ),
+				'name'				=> _x( 'Limit', 'galleries widget', 'onechurch' ),
 				'after_name'		=> '', // (Optional), (Required), etc.
-				'desc'				=> _x( 'Set to 0 for unlimited.', 'galleries widget', 'church-theme-framework' ),
+				'desc'				=> _x( 'Set to 0 for unlimited.', 'galleries widget', 'onechurch' ),
 				'type'				=> 'number', // text, textarea, checkbox, radio, select, number, url, image, color
 				'checkbox_label'	=> '', //show text after checkbox
 				'radio_inline'		=> false, // show radio inputs inline or on top of each other

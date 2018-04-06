@@ -67,7 +67,7 @@ function ctfw_taxonomy_order_note( $taxonomy ) {
 		// Show message
 		echo '<p class="description">';
 		printf(
-			__( '<b>Custom Ordering:</b> Try <a href="%s" target="_blank">this plugin</a> for custom ordering your %s.', 'church-theme-framework' ),
+			__( '<b>Custom Ordering:</b> Try <a href="%s" target="_blank">this plugin</a> for custom ordering your %s.', 'onechurch' ),
 			$url,
 			$taxonomy_plural
 		);

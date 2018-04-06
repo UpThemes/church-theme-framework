@@ -52,7 +52,7 @@ class CTFW_Breadcrumbs {
 	public function set_options( $options ) {
 
 		$defaults = array(
-			'separator'	=> _x( ' > ', 'breadcrumb separator', 'church-theme-framework' ),
+			'separator'	=> _x( ' > ', 'breadcrumb separator', 'onechurch' ),
 			'classes'	=> '', // additional classes
 			'shorten'	=> 30, // shorten post titles
 		);
@@ -239,7 +239,7 @@ class CTFW_Breadcrumbs {
 		$year = get_query_var( 'year' );
 		if ( ! empty( $year ) ) {
 
-			$dateformatstring = _x( 'Y', 'breadcrumb year format', 'church-theme-framework' );
+			$dateformatstring = _x( 'Y', 'breadcrumb year format', 'onechurch' );
 
 			if ( ! empty( $base_url ) ) { // if base URL given, use it (such as custom post type date archive)
 				$date_url = trailingslashit( $base_url ) . trailingslashit( $year );
@@ -256,7 +256,7 @@ class CTFW_Breadcrumbs {
 			$month = get_query_var( 'monthnum' );
 			if ( ! empty( $month ) ) {
 
-				$dateformatstring = _x( 'F', 'breadcrumb month format', 'church-theme-framework' );
+				$dateformatstring = _x( 'F', 'breadcrumb month format', 'onechurch' );
 
 				if ( ! empty( $base_url ) ) { // if base URL given, use it (such as custom post type date archive)
 					$date_url .= trailingslashit( $month );
@@ -273,7 +273,7 @@ class CTFW_Breadcrumbs {
 				$day = get_query_var( 'day' );
 				if ( ! empty( $day ) ) {
 
-					$dateformatstring = _x( 'jS', 'breadcrumb day format', 'church-theme-framework' );
+					$dateformatstring = _x( 'jS', 'breadcrumb day format', 'onechurch' );
 
 					if ( ! empty( $base_url ) ) { // if base URL given, use it (such as custom post type date archive)
 						$date_url .= trailingslashit( $day );
@@ -323,12 +323,12 @@ class CTFW_Breadcrumbs {
 
 		// Shorten other common titles (short, concise, non-redundant breadcrumb is best)
 		// These are sample content page titles and likely to remain unchanged by user
-		$tidy_title = str_replace( 'Sermon Archive', _x( 'Sermons', 'sermon breadcrumb', 'church-theme-framework' ), $tidy_title );
-		$tidy_title = str_replace( 'Sermon Topics', _x( 'Topics', 'sermon breadcrumb', 'church-theme-framework' ), $tidy_title );
-		$tidy_title = str_replace( 'Sermon Series', _x( 'Series', 'sermon breadcrumb', 'church-theme-framework' ), $tidy_title );
-		$tidy_title = str_replace( 'Sermon Books', _x( 'Books', 'sermon breadcrumb', 'church-theme-framework' ), $tidy_title );
-		$tidy_title = str_replace( 'Sermon Speakers', _x( 'Speakers', 'sermon breadcrumb', 'church-theme-framework' ), $tidy_title );
-		$tidy_title = str_replace( 'Sermon Dates', _x( 'Dates', 'sermon breadcrumb', 'church-theme-framework' ), $tidy_title );
+		$tidy_title = str_replace( 'Sermon Archive', _x( 'Sermons', 'sermon breadcrumb', 'onechurch' ), $tidy_title );
+		$tidy_title = str_replace( 'Sermon Topics', _x( 'Topics', 'sermon breadcrumb', 'onechurch' ), $tidy_title );
+		$tidy_title = str_replace( 'Sermon Series', _x( 'Series', 'sermon breadcrumb', 'onechurch' ), $tidy_title );
+		$tidy_title = str_replace( 'Sermon Books', _x( 'Books', 'sermon breadcrumb', 'onechurch' ), $tidy_title );
+		$tidy_title = str_replace( 'Sermon Speakers', _x( 'Speakers', 'sermon breadcrumb', 'onechurch' ), $tidy_title );
+		$tidy_title = str_replace( 'Sermon Dates', _x( 'Dates', 'sermon breadcrumb', 'onechurch' ), $tidy_title );
 
 		// Shorten
 		if ( isset( $options['shorten'] ) ) {
@@ -363,7 +363,7 @@ class CTFW_Breadcrumbs {
 			$page_num = ctfw_page_num();
 			if ( $page_num > 1 ) {
 				$this->add_breadcrumb( $breadcrumbs, array(
-					sprintf( _x( 'Page %s', 'breadcrumb', 'church-theme-framework' ), $page_num ),
+					sprintf( _x( 'Page %s', 'breadcrumb', 'onechurch' ), $page_num ),
 					$_SERVER['REQUEST_URI']
 				) );
 			}
@@ -374,7 +374,7 @@ class CTFW_Breadcrumbs {
 				// Search Results
 				if ( is_search() ) {
 					$this->add_breadcrumb( $breadcrumbs, array(
-						_x( 'Search Results', 'breadcrumb', 'church-theme-framework' ),
+						_x( 'Search Results', 'breadcrumb', 'onechurch' ),
 						get_search_link()
 					) );
 				}
@@ -560,7 +560,7 @@ class CTFW_Breadcrumbs {
 			// Add "Home" to front if have other breadcrumb(s)
 			if ( ! empty( $breadcrumbs ) ) {
 				$this->add_breadcrumb( $breadcrumbs, array(
-					_x( 'Home', 'breadcrumbs', 'church-theme-framework' ),
+					_x( 'Home', 'breadcrumbs', 'onechurch' ),
 					home_url( '/' )
 				) );
 			}

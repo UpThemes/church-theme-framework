@@ -65,7 +65,7 @@ function ctfw_event_calendar_head_title( $title, $sep, $seplocation ) {
 			if ( ! empty( $_GET['month'] ) ) {
 
 				/* translators: this is the PHP date format used for <title> on event calendar months */
-				$parts[] = date_i18n( _x( 'F Y', 'event calendar', 'church-theme-framework' ), strtotime( $_GET['month'] ) );
+				$parts[] = date_i18n( _x( 'F Y', 'event calendar', 'onechurch' ), strtotime( $_GET['month'] ) );
 
 			}
 
@@ -102,7 +102,7 @@ function ctfw_event_calendar_head_title( $title, $sep, $seplocation ) {
 					$separator = $wpseo_separator;
 				} else { // otherwise fall back to ' | ' WordPress default
 					/* translators: separator for <title> content */
-					$separator = _x( ' | ', 'head title', 'church-theme-framework' );
+					$separator = _x( ' | ', 'head title', 'onechurch' );
 				}
 
 				// Combine month and category into suffix
